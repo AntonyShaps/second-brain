@@ -5,3 +5,8 @@ __pycache__/
 venv/
 .env
 
+# Local SQLite databases
+*.db
+*.db-journal
+*.db-shm
+*.db-wal

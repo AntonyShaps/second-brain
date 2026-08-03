@@ -1,7 +1,7 @@
 from enum import StrEnum
 from uuid import UUID
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 
 class EntryType(StrEnum):
     NOTE = "note"
@@ -17,3 +17,4 @@ class EntryCreate(BaseModel):
 class EntryRead(EntryCreate):
     id: UUID
 
+    model_config = ConfigDict(from_attributes=True)
