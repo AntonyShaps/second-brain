@@ -5,7 +5,7 @@ from app.main import app
 client = TestClient(app)
 
 
-def test_create_entry():
+def test_create_entry(client):
     response = client.post(
         "/entries",
         json={
