@@ -19,4 +19,4 @@ The initial functions I'd like to have:
 ## First TODO
 
 1. Having first CRUD app as fast as possible
-
+2. Actually needed to take a step back, to switch to Domain modelling
