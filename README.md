@@ -7,10 +7,29 @@ These kind of documentation is created to be comfortable for me. Do not take it 
 
 1. First try lead to rathe fast understanding that i need some knowledge on DDD, as i had never designed full system groun up and at some point you start hitting some kind of block. You understand how isolated elements work, but you can't put them together. Why DDD? Because I have tried to finish 'cosmic python' several times, but found the language of Domain-Driven-Desing very abstract and hard to contemplate, but as soon as I hit a wall with this app - there was no other choice for me, but i needed to take longer path. And actually can recommened the following two books: [link1], [link2]. What I figured out is that - yes, this is very hard "language", but you start to wrap you head around it the more you think about it, especially in relation to your app. Mapping concepts mentioned in literature helps a lot. Additionally, there are no set in stone rules and its up to you to decide how actually to desing your application as DDD gives you just a set of tools, which helps to bring those "isolated elements" together in an efficient way, and you are free to choose the ones which you deem useful in your case.
 
-2. In my case I decide to follow TDD on purpose, because i believe this approach creates higher quality software. I was lucky to discover a technique called scenarios from godfather of DDD - [Name, Surname]. Honestly, I was just shocked how stupid I am, but there is really no magic here, you just create scenarios. And it perfectly fits TDD, because your scenarios can become your tests. Its hard to explain in words, but I think every person who decided to desing their app ground up for the first time faces this issue. You kinda now a lot, but do not know how and where to start and even such simple things as scenarios, which you can come up with by yourself, are just missing from your mind for some reason.
+2. In my case I decide to follow TDD on purpose, because i believe this approach creates higher quality software. I was lucky to discover a technique called scenarios[Actually its from BDD] from godfather of DDD - [Name, Surname]. Honestly, I was just shocked how stupid I am, but there is really no magic here, you just create scenarios. And it perfectly fits TDD, because your scenarios can become your tests. Its hard to explain in words, but I think every person who decided to desing their app ground up for the first time faces this issue. You kinda now a lot, but do not know how and where to start and even such simple things as scenarios, which you can come up with by yourself, are just missing from your mind for some reason.
 
-### Scenario [Todos]
+3. Again, i was treating initial desing as a simple task. Actually, its quite the opposite, but i am happy that I discovered GIVEN, WHEN, THEN
 
+### Scenario [Todos]-1:
+
+I want to have a list of todos. I would like to be able to sort todos by created time, by priority, by tag, scheduled time(e.g Home, Work, Studying, Personal projects, etc.). Todos can be a part of project. Todos can also be scheduled. Unscheduled todos are shown as of today. They can be in backlog, active or done. I would like to have done tasks persisted too, to make some analysis on them. [And here you can see again that for some reason i started describing FUNCTIONALITY or DATA MODEL and not a scenario, which as far as I understood - a symptom of a key issue when working with scenarios and domain-driven-design - inability to decouple buisness logic from tehcnical part, which means basically looking at your application as non-technical, common user]
+
+### Scenario [Todos]-2:
+
+Given a list of tasks and they are active 
+When the day ends 
+Than move over to the new day
+
+### Scenario [Todos]-3:
+
+Given a project pane
+When I select a specific project
+I can see all the resource and tasks connected to a project
+
+### Scenario [Todos]-4:
+
+Given a task
 
 
 [initial-documentation]
